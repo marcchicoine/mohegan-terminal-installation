@@ -1,0 +1,146 @@
+
+@-moz-keyframes squiggly-anim {
+  0% {
+    filter: url("#squiggly-0");
+  }
+  25% {
+    filter: url("#squiggly-1");
+  }
+  50% {
+    filter: url("#squiggly-2");
+  }
+  75% {
+    filter: url("#squiggly-3");
+  }
+  100% {
+    filter: url("#squiggly-4");
+  }
+}
+@-webkit-keyframes squiggly-anim {
+  0% {
+    filter: url("#squiggly-0");
+  }
+  25% {
+    filter: url("#squiggly-1");
+  }
+  50% {
+    filter: url("#squiggly-2");
+  }
+  75% {
+    filter: url("#squiggly-3");
+  }
+  100% {
+    filter: url("#squiggly-4");
+  }
+}
+@-o-keyframes squiggly-anim {
+  0% {
+    filter: url("#squiggly-0");
+  }
+  25% {
+    filter: url("#squiggly-1");
+  }
+  50% {
+    filter: url("#squiggly-2");
+  }
+  75% {
+    filter: url("#squiggly-3");
+  }
+  100% {
+    filter: url("#squiggly-4");
+  }
+}
+@keyframes squiggly-anim {
+  0% {
+    filter: url("#squiggly-0");
+  }
+  25% {
+    filter: url("#squiggly-1");
+  }
+  50% {
+    filter: url("#squiggly-2");
+  }
+  75% {
+    filter: url("#squiggly-3");
+  }
+  100% {
+    filter: url("#squiggly-4");
+  }
+}
+
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+      overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+    cursor: none;
+
+}
+
+.overlay{
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+.circle{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 100;
+    background-image: url(textfloat.svg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 50%;
+
+    animation: squiggly-anim 0.34s linear infinite;
+
+}
+.circle.full{
+  width: 1000%;
+  height: 1000%;
+  transition: 250ms ease all;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nyc  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: absolute;
+
+
+  
+}
+
+
+.nyc .bo {
+width: 80vw;
+height: auto;
+
+}
+
+
+.nyc .mt {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  }
+
+
+
